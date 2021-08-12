@@ -1,0 +1,32 @@
+1. goto command prompt
+
+2. create a directory and change to directory
+	d:> mkdir fisconfigs
+	d:>cd fisconfigs
+3. intialize the git 
+	d:/fisconfigs> git init
+
+4. save the application.yml file in this folder created in step2
+
+	application.yml
+	---------------
+	spring:
+ 	   datasource:
+   	      url:jdbc:mysql://localhost:3306/test
+              username:root
+              password:root
+              driver:type4
+
+5. add the files to staging
+   d:/fisconfigs> git add .
+
+6. add the files to local repository
+   d:/fisconfigs> git commit -m "commit message"
+
+7. to access the properties file through spring cloud config server
+
+   http://localhost:88888/application/default
+
+
+
+
