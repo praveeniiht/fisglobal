@@ -1,0 +1,40 @@
+1. Base Image
+	FROM openjdk
+
+2. Author Info
+    [optional]
+       MAINTAINER <emailid of author>
+
+
+3. executables 
+
+     RUN  --  this will execute any linux command
+     COPY -- used to copy the contents from host machine to container
+     ADD  -- used to copy the contents either from locally or from external site
+     EXPOSE --- used to expose the ports inside the container to outside world
+     ENV  --- Used to set the environment variables
+     CMD  --- It is used to excute the statement at start of your container
+     VOLUME 	-- It is used to mount the space between the host to container
+     WORKDIR  --  It is used to specifiy the default working director 
+
+
+Layered Architecutre
+---------------------
+
+
+from openjdk   
+maintainer praveenk@rps.com   
+copy demo.jar /home 
+expose 8080  
+cmd ["java","-jar","demo.jar"] --image5
+
+
+
+DOCKER build --tag <imagename> .
+
+
+
+
+
+
+
