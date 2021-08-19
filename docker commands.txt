@@ -1,0 +1,40 @@
+
+
+Docker Commands
+---------------
+
+1. docker --version 			: To display the docker version.
+
+2. docker images			: To display the docker images in the local machine
+
+3. docker pull <imagename>		: To pull the image from the dockerhub
+
+4. docker push <imagename>		: To push the image into the dockerhub
+
+5. docker ps 				: To list all the running containers.
+
+6. docker ps -a 			: To list all the containers
+
+7. docker run -d -t -i --name <containername> -p hostport:containerPort <imagename> ---  To create a container and run 
+                                         in the background with the given containername assigned and mapped with the
+					 host machine port number.
+
+
+8. docker exec -it <containerName> /bin/sh	: to move internally into the running container.
+
+9. docker stop <containername>		: To stop the running container
+
+10. docker start <containername>	: To start the stopped container.
+
+11. docker inspect <containername>	: To check the details of container.
+
+12. docker save -o <imagetar.gz> <imagename>	:To create a tar file for the given image
+
+13. docker import <imagetar.gz>		: To extract the image from the given tar.gz file
+
+14. docker rm				: to remove the docker containers.
+
+15. docker rmi				: to remove the docker images
+					(before removing any image ensure its conrresponding containers are all
+					  destroyed)
+
