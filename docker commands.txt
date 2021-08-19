@@ -15,9 +15,10 @@ Docker Commands
 
 6. docker ps -a 			: To list all the containers
 
-7. docker run -d -t -i --name <containername> -p hostport:containerPort <imagename> ---  To create a container and run 
-                                         in the background with the given containername assigned and mapped with the
-					 host machine port number.
+7. docker run -d -t -i --name <containername> -p hostport:containerPort <imagename> :
+
+To create a container and run in the background with the given containername assigned and mapped with the
+host machine port number.
 
 
 8. docker exec -it <containerName> /bin/sh	: to move internally into the running container.
@@ -37,4 +38,7 @@ Docker Commands
 15. docker rmi				: to remove the docker images
 					(before removing any image ensure its conrresponding containers are all
 					  destroyed)
+
+Note: To execute the commands in the linux env., add sudo before the docker commands 
+
 
