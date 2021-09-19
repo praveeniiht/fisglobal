@@ -1,0 +1,57 @@
+https://app.mymapit.in/code4/tiny/LmmCYA
+
+DevOps Tools
+-------------
+Planning and Coding
+a. Git
+b.JIRA
+
+Build Tools
+-----------
+a. Maven
+b. Gradle
+
+Test
+----
+Junit
+SE
+
+Integration
+------------
+Bamboo
+Hudson
+Jenkins
+
+Deploy and Operate
+-------------------
+Docker
+Vagrant
+Ansible
+Puppet
+Chef
+SaltStack
+
+Monitor
+-------
+Nagios
+Splunk
+Stack
+DevOps Life Cycle
+-----------------
+1. Plan
+2. Code
+3. Build
+4. Test
+5. Deploye
+6. Operate
+7. Monitor.
+
+
+DevOps Stages
+1. Version Control: Maintains different versions of the code ( Source Code Management)
+2. Continous Integration : Compile, validate, code Review, Unit Testing, Integration Testing (Continous Build)
+3. Continous delivery : Deploying the build applications to the test servers and performing UAT (Continous Testing)
+4. Continous Deployment: Deploying the tested applications on the prod server for release (Configuration Management and Containerziation)
+
+
+
