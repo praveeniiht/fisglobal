@@ -1,0 +1,77 @@
+Web Service
+-----------
+A web service is any piece of software that makes itself available over the internet and uses a 
+standardized XML messaging system.
+
+Key Terminology
+---------------
+1. Request
+2. Response
+3. Message Exchange Format  : XML and JSON
+
+	Student(htno,name,branch)
+
+	<students>
+		<student>
+			<htno>123</htno>
+			<name>kumar</name>
+			<branch>cse</branch>
+		</student>
+		<student>
+			<htno>124</htno>
+			<name>sunil</name>
+			<branch>it</branch>
+		</student>
+	</students>
+	{	{
+		"htno":"123",
+		"name":"kumar",
+		"branch":"cse"
+
+		},
+		{
+		"htno":"124",
+		"name":"sunil",
+		"branch":"it"
+		}
+	}
+
+
+4. Service Provider or Server
+5. Service Consumer or Client
+6. Service Definition : Defines the contract between the provider and consumer
+
+
+				Request
+(client)applicationA    <-----------------------> WebService  (Service provider or server)
+				Response
+
+
+Service Definition the following :
+	1. Request / Response format
+	2. Request Structure
+	3. Response Structure
+	4. endpoint
+
+7. Transport : It defines how a service is called eg. HTTP or MQ
+
+WebServices: SOAP and REST
+
+REST: Representational State Transfer
+Http Request Methods: GET , PUT, POST etc
+Http Response Methods: Status codes: 200, 404, 500
+
+Resource: Any thing which is exposed to outside world
+/user/all
+/user/1
+/user/praveen
+
+A resource can have different representations
+1. xml
+2. HTML
+3. JSON
+
+
+
+
+			  

@@ -1,0 +1,21 @@
+
+
+@PostMapping("/users")
+public ResponseEntity<Object> createUser(@RequestBody User user){
+User savedUser = service.save(user);
+URI location = ServletUriComponentsBuilder
+		.fromCurrentRequest()
+		.buildAndExpand(savedUser.getId()).toUri();
+return ResponseEntity.created(location).build();
+
+}
+
+
+https://app.mymapit.in/code4/tiny/yI9BzL
+
+
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
+spring.datasource.url=jdbc:mysql://localhost:3306/test
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
